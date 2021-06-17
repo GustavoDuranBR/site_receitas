@@ -11,6 +11,18 @@
 
     {% include 'partials/_menu.html' %}
 
+    <div class="contact-area section-padding-0-80">
+       <div class="container">
+           <div class="row">
+               <div class="col-12">
+                   <div class="section-heading">
+                       <h3>Olá {{ user.username }}</h3>
+                   </div>
+               </div>
+           </div>
+       </div>
+    </div>
+
     <!-- ##### Best Receipe Area Start ##### -->
     <section class="best-receipe-area">
         <div class="container">
@@ -34,9 +46,6 @@
                 </div>
                 {% endfor %}
                 {% else %}
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <p>Receita não encontrada</p>
-                </div>
                 {% endif %}
             </div>
         </div>
